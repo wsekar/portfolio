@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.css";
 import AboutMe from "../../assets/wibi.png";
+import CV from "../../assets/CV - Wibiati Sekar Kinasih.pdf";
 
 const About = () => {
   return (
@@ -19,7 +20,7 @@ const About = () => {
               solutions drives me to continuously learn and adapt to the latest
               technologies in the field.{" "}
             </p>
-            <a href="" className="btn">
+            <a href={CV} className="btn">
               Download CV
             </a>
           </div>
