@@ -4,6 +4,15 @@ import AboutMe from "../../assets/wibi.png";
 import CV from "../../assets/CV - Wibiati Sekar Kinasih.pdf";
 
 const About = () => {
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = CV;
+    link.setAttribute('download', 'CV - Wibiati Sekar Kinasih.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="about container section" id="about">
       <h2 className="section__title">About Me</h2>
@@ -20,7 +29,7 @@ const About = () => {
               solutions drives me to continuously learn and adapt to the latest
               technologies in the field.{" "}
             </p>
-            <a href={CV} className="btn">
+            <a className="btn" onClick={handleDownloadCV}>
               Download CV
             </a>
           </div>
