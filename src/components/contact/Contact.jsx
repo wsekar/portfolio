@@ -9,14 +9,10 @@ const Contact = () => {
       <div className="contact__container">
         <div className="contact__info">
           <h3 className="contact__title">Let's talk about everything!</h3>
-          {/* <p className="contact__details">
-            Don't like forms? Send me an email. 👋
-          </p> */}
         </div>
 
         <form action="" className="contact__form">
           <div className="contact__form-group">
-            
             <div className="contact__form-div">
               <input
                 type="text"
@@ -24,7 +20,7 @@ const Contact = () => {
                 placeholder="Input your name"
               />
             </div>
-            
+
             <div className="contact__form-div">
               <input
                 type="email"
@@ -32,21 +28,27 @@ const Contact = () => {
                 placeholder="Input your email"
               />
             </div>
-            </div>
-            
-            <div className="contact__form-div">
-              <input
-                type="text"
-                className="contact__form-input"
-                placeholder="Input your subject"
-              />
-            </div>
-            
-            <div className="contact__form-div contact__form-area">
-    <textarea name="" id="" cols="30" rows="10" className="contact__form-input" placeholder="Write your message"></textarea>
-            </div>
-<button className="btn">Send Message</button>
-          
+          </div>
+
+          <div className="contact__form-div">
+            <input
+              type="text"
+              className="contact__form-input"
+              placeholder="Input your subject"
+            />
+          </div>
+
+          <div className="contact__form-div contact__form-area">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              className="contact__form-input"
+              placeholder="Write your message"
+            ></textarea>
+          </div>
+          <button className="btn">Send Message</button>
         </form>
       </div>
     </section>

@@ -3,7 +3,7 @@ import "./home.css";
 import Me from "../../assets/wibi.png";
 import HeaderSocials from "./HeaderSocials";
 import ScrollDown from "./ScrollDown";
-// import Shapes from "./Shapes";
+import Shapes from "./Shapes";
 
 const Home = () => {
   return (
@@ -21,7 +21,7 @@ const Home = () => {
 
         <ScrollDown />
       </div>
-      {/* <Shapes /> */}
+      <Shapes />
     </section>
 
   );
