@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./sidebar.css";
 
 const Sidebar = () => {
+  const currentYear = new Date().getFullYear(); 
   const [toggle, showMenu] = useState(false);
   return (
     <>
@@ -46,7 +47,7 @@ const Sidebar = () => {
         </nav>
 
         <div className="nav__footer">
-          <span className="copyright">&copy; 2024</span>
+          <span className="copyright">&copy; {currentYear}</span>
         </div>
       </aside>
       
